@@ -4,6 +4,11 @@
 /build
 /ffmpeg
 /si
+/cygwin64
+/bin_Win32d
+/bin_Win32
+/bin_x64
+/bin_x64d
 
 
 

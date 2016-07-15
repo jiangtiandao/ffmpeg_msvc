@@ -44,15 +44,15 @@
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>..\build\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>..\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\bin_Win32d\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\ffmpeg;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\build\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\ffmpeg;$(IncludePath)</IncludePath>
+    <LibraryPath>..\bin_Win32\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -69,7 +69,7 @@
       <AdditionalOptions>-D_WIN32_WINNT=0x0501 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Kernel32.lib;Psapi.lib;Ws2_32.lib;Secur32.lib;strmbase.lib;Vfw32.lib;Shlwapi.lib;libavcodec.a;libavdevice.a;libavformat.a;libavutil.a;libavfilter.a;libswscale.a;libswresample.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;Secur32.lib;strmbase.lib;Vfw32.lib;Shlwapi.lib;Psapi.lib;swresample.lib;swscale.lib;avutil.lib;avformat.lib;avdevice.lib;avfilter.lib;avcodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
@@ -90,7 +90,7 @@
       <AdditionalOptions>-D_WIN32_WINNT=0x0501 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>Kernel32.lib;Psapi.lib;Ws2_32.lib;Secur32.lib;strmbase.lib;Vfw32.lib;Shlwapi.lib;libavcodec.a;libavdevice.a;libavformat.a;libavutil.a;libavfilter.a;libswscale.a;libswresample.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;Secur32.lib;strmbase.lib;Vfw32.lib;Shlwapi.lib;Psapi.lib;swresample.lib;swscale.lib;avutil.lib;avformat.lib;avdevice.lib;avfilter.lib;avcodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
