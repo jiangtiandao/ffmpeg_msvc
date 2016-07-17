@@ -7,7 +7,7 @@ call "%VS140COMNTOOLS%vsvars32.bat"
 rmdir /s/q bin_Win32d
 
 
-sh build_ffmpeg_msvc.sh quick
+sh build_ffmpeg_msvc.sh
 rem sh build_ffmpeg_msvc.sh quick
 
 

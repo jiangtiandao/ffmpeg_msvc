@@ -35,7 +35,6 @@ make_dirs() (
 )
 
 copy_libs() (
-	echo sheldon 38
   if $debug ; then
       cp -u lib*/*.dll ../bin_${archdir}d
       cp -u lib*/*.pdb ../bin_${archdir}d
@@ -48,10 +47,9 @@ copy_libs() (
 )
 
 clean() (
-	rm -Rf *
-	git reset --hard HEAD
+  make distclean > /dev/null 2>&1
+  find . -name "*.exp" -o -name "*.ilk" -o -name "*.pdb" -o -name "*.exe" | xargs rm -f
 )
-
 
 configure() (
   OPTIONS="
@@ -103,7 +101,7 @@ fi
 
 ## Only if configure succeeded, actually build
 if ! $clean_build || [ ${CONFIGRETVAL} -eq 0 ]; then
-  build
+  build &&
   copy_libs
 fi
 
