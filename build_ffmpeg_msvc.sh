@@ -34,18 +34,6 @@ make_dirs() (
   fi
 )
 
-copy_libs() (
-  if $debug ; then
-      cp -u lib*/*.dll ../bin_${archdir}d
-      cp -u lib*/*.pdb ../bin_${archdir}d
-      cp -u lib*/*.lib ../bin_${archdir}d/lib
-  else
-      cp -u lib*/*.dll ../bin_${archdir}
-      cp -u lib*/*.pdb ../bin_${archdir}
-      cp -u lib*/*.lib ../bin_${archdir}/lib
-  fi
-)
-
 clean() (
   make distclean > /dev/null 2>&1
   find . -name "*.exp" -o -name "*.ilk" -o -name "*.pdb" -o -name "*.exe" | xargs rm -f
@@ -79,9 +67,6 @@ configure() (
   sh configure --toolchain=msvc --extra-cflags="${EXTRA_CFLAGS}" --extra-ldflags="${EXTRA_LDFLAGS}" ${OPTIONS}
 )
 
-build() (
-  make -j$NUMBER_OF_PROCESSORS
-)
 
 echo Building ffmpeg in MSVC Debug config...
 
@@ -102,8 +87,19 @@ fi
 
 ## Only if configure succeeded, actually build
 if ! $clean_build || [ ${CONFIGRETVAL} -eq 0 ]; then
-  build &&
-  copy_libs
+
+  make -j$NUMBER_OF_PROCESSORS
+
+  if $debug ; then
+      cp -u lib*/*.dll ../bin_${archdir}d
+      cp -u lib*/*.pdb ../bin_${archdir}d
+      cp -u lib*/*.lib ../bin_${archdir}d/lib
+  else
+      cp -u lib*/*.dll ../bin_${archdir}
+      cp -u lib*/*.pdb ../bin_${archdir}
+      cp -u lib*/*.lib ../bin_${archdir}/lib
+  fi
+
 fi
 
 cd ..

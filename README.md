@@ -1,9 +1,9 @@
-## 1. 下载FFMPEG源码,并编译 ##
+## 1. 下载 ##
 	
-- https://git.ffmpeg.org/ffmpeg.git
+	git clone --recursive https://github.com/121786404/ffmpeg_msvc
 
 ## 2. 编译ffmpeg和ffplay ##
 	
 	build_win32d.bat 编译ffmpeg
 	
-	打开msvc_proj/ffmpegvs.sln 进行编译
+	打开msvc_proj/ffmpegvs.sln 编译ffplay和ffmpeg

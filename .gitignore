@@ -12,3 +12,6 @@ ld.exe
 msvc_proj/Debug
 msvc_proj/Release
 msvc_proj/*.db
+
+cygwin64/home/*
+cygwin64/tmp/*
