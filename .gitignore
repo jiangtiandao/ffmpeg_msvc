@@ -9,8 +9,6 @@
 
 ld.exe
 *.old
-cygwin64/usr/share/doc
 msvc_proj/Debug
-msvc_proj/*.user
+msvc_proj/Release
 msvc_proj/*.db
-msvc_proj/.vs
