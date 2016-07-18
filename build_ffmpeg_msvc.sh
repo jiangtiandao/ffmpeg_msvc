@@ -49,6 +49,7 @@ copy_libs() (
 clean() (
   make distclean > /dev/null 2>&1
   find . -name "*.exp" -o -name "*.ilk" -o -name "*.pdb" -o -name "*.exe" | xargs rm -f
+  rm -f config.out
 )
 
 configure() (
