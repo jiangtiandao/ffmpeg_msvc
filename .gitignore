@@ -14,4 +14,3 @@ msvc_proj/Release
 msvc_proj/*.db
 
 cygwin64/home/*
-cygwin64/tmp/*
