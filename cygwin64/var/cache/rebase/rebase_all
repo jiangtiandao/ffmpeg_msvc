@@ -35,6 +35,7 @@
 /usr/bin/cygpipeline-1.dll
 /usr/bin/cygpopt-0.dll
 /usr/bin/cygreadline7.dll
+/usr/bin/cygsigsegv-2.dll
 /usr/bin/cygsmartcols-1.dll
 /usr/bin/cygssl-1.0.0.dll
 /usr/bin/cygssp-0.dll

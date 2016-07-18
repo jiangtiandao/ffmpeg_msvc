@@ -11,6 +11,7 @@ cygutils cygutils-1.4.15-2.tar.bz2 0
 cygwin cygwin-2.5.2-1.tar.bz2 0
 dash dash-0.5.8-3.tar.bz2 0
 desktop-file-utils desktop-file-utils-0.22-2.tar.bz2 0
+diffutils diffutils-3.3-3.tar.bz2 0
 editrights editrights-1.03-1.tar.bz2 0
 file file-5.25-1.tar.bz2 0
 findutils findutils-4.6.0-1.tar.bz2 0
@@ -51,6 +52,7 @@ libpipeline1 libpipeline1-1.4.0-1.tar.bz2 0
 libpopt-common libpopt-common-1.16-2.tar.bz2 0
 libpopt0 libpopt0-1.16-2.tar.bz2 0
 libreadline7 libreadline7-6.3.8-1.tar.bz2 0
+libsigsegv2 libsigsegv2-2.10-2.tar.bz2 0
 libsmartcols1 libsmartcols1-2.25.2-2.tar.bz2 0
 libssp0 libssp0-5.4.0-1.tar.bz2 0
 libstdc++6 libstdc++6-5.4.0-1.tar.bz2 0

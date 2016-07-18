@@ -440,3 +440,10 @@
 # rebase_pkg information from: /etc/setup/zlib0.lst.gz
 /usr/bin/cygz.dll
 # rebase_pkg information from: /etc/setup/_autorebase.lst.gz
+# rebase_pkg information from: /etc/setup/diffutils.lst.gz
+/usr/bin/cmp.exe
+/usr/bin/diff.exe
+/usr/bin/diff3.exe
+/usr/bin/sdiff.exe
+# rebase_pkg information from: /etc/setup/libsigsegv2.lst.gz
+/usr/bin/cygsigsegv-2.dll

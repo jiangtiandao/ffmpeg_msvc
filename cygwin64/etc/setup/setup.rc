@@ -126,6 +126,9 @@ mirrors-lst
 	ftp://ftp.acc.umu.se/mirror/cygwin/;ftp.acc.umu.se;Europe;Sweden
 	http://ftp.acc.umu.se/mirror/cygwin/;ftp.acc.umu.se;Europe;Sweden
 	http://download.nus.edu.sg/mirror/cygwin/;download.nus.edu.sg;Asia;Singapore
+	ftp://ftp.ntu.edu.tw/cygwin/;ftp.ntu.edu.tw;Asia;Taiwan
+	ftp://ftp.ntu.edu.tw/pub/cygwin/;ftp.ntu.edu.tw;Asia;Taiwan
+	http://ftp.ntu.edu.tw/pub/cygwin/;ftp.ntu.edu.tw;Asia;Taiwan
 	ftp://ftp.cse.yzu.edu.tw/pub/cygwin/;ftp.cse.yzu.edu.tw;Asia;Taiwan
 	http://ftp.cse.yzu.edu.tw/pub/cygwin/;ftp.cse.yzu.edu.tw;Asia;Taiwan
 	ftp://ftp.yzu.edu.tw/cygwin/;ftp.yzu.edu.tw;Asia;Taiwan
@@ -136,6 +139,12 @@ mirrors-lst
 last-mirror
 	http://mirrors.neusoft.edu.cn/cygwin/
 net-method
-	Direct
+	Proxy
 last-action
 	Download,Install
+chooser_window_settings
+	44,0,1,4294967295,4294967295,4294967295,4294967295,425,213,1507,936
+net-proxy-host
+	192.168.6.247
+net-proxy-port
+	3128

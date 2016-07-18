@@ -282,3 +282,7 @@
 /usr/bin/lzmainfo.exe
 /usr/bin/xz.exe
 /usr/bin/xzdec.exe
+/usr/bin/cmp.exe
+/usr/bin/diff.exe
+/usr/bin/diff3.exe
+/usr/bin/sdiff.exe
